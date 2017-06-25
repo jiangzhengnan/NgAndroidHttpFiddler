@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b2ebf2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/themeColor">
+
+        <ImageButton
+            android:id="@+id/btn_back_rt"
+            style="@android:style/Widget.Holo.Button.Borderless"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="逆向追踪"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <ImageView
+            android:id="@+id/iv_smail_clound1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_cloud_small1" />
+
+        <ImageView
+            android:id="@+id/iv_smail_clound2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/ic_cloud_small2" />
+
+        <ImageView
+            android:id="@+id/ic_circle3"
+            android:layout_width="218dp"
+            android:layout_height="218dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_circle3"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ic_circle2"
+            android:layout_width="178dp"
+            android:layout_height="178dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_circle2"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ic_circle1"
+            android:layout_width="138dp"
+            android:layout_height="138dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_circle1"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/rl_start"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <com.ng.ngcommon.view.NGNormalCircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.3"
+                android:src="@drawable/ic_blue"
+
+                />
+
+            <com.ng.ngcommon.view.NGNormalCircleImageView
+                android:id="@+id/btn_click_test"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_blue" />
+
+            <TextView
+                android:id="@+id/tv_startrt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="开始追踪"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="4"
+        android:background="@drawable/shape_normal_radius"
+        android:elevation="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_showlayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

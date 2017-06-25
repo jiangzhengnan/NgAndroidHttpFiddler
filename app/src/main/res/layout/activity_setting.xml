@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/themeColor">
+
+        <ImageButton
+            android:id="@+id/btn_back_setting"
+            style="@android:style/Widget.Holo.Button.Borderless"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="相关设置"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_find_ac"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_btn"
+        android:text="查看辅助服务权限列表"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/btn_find_permission"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:background="@drawable/shape_btn"
+        android:text="查看权限程序列表"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:background="@drawable/shape_btn"
+        android:text="一键卸载程序"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:background="@drawable/shape_btn"
+        android:text="一键关闭后台"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:background="@drawable/shape_btn"
+        android:text="查看后台运行程序"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="#2da6ee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_totolbytes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实时字节流量:"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/tv_totolpakes"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实时数据包流量:"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_main_bghead" />
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/scanning_bg" />
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/radar_scan_bg" />
+
+        <ImageView
+            android:id="@+id/radar_scan_img"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/radar_scan_img" />
+
+        <ImageView
+            android:id="@+id/radar_point1"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/rend_point_normal" />
+
+        <ImageView
+            android:id="@+id/radar_point2"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/rend_point_normal" />
+
+        <ImageView
+            android:id="@+id/radar_point3"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/rend_point_normal" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

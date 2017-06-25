@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_item_bg"
+    android:layout_height="58dp"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <LinearLayout
+        android:padding="4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_main_item_laucher_qs"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_main_item_name_qs"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_toRightOf="@id/iv_main_item_laucher"
+                android:layout_toLeftOf="@+id/tv_main_item_download"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:text="app name"/>
+
+            <TextView
+                android:id="@+id/tv_main_item_packgename_qs"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_toRightOf="@id/iv_main_item_laucher"
+                android:layout_toLeftOf="@+id/tv_main_item_download"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:text="app name"/>
+        </LinearLayout>
+
+        <ImageView
+            android:padding="5dp"
+            android:src="@drawable/ic_tanhao"
+            android:scaleType="centerCrop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            />
+    </LinearLayout>
+
+    <View
+        android:background="#e0e0e0"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"></View>
+</LinearLayout>
